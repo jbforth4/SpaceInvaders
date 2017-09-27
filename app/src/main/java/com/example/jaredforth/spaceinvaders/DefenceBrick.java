@@ -36,4 +36,16 @@ public class DefenceBrick {
                         shelterPadding + shelterPadding * shelterNumber,
                 row * height + height - brickPadding + startHeight);
     }
+
+    public RectF getRect(){
+        return this.rect;
+    }
+
+    public void setInvisible(){
+        isVisible = false;
+    }
+
+    public boolean getVisibility(){
+        return isVisible;
+    }
 }
