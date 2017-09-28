@@ -26,7 +26,7 @@ public class Main2Activity extends Activity {
         nsfwButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main2Activity.this, SpaceInvadersActivity.class);
+                Intent intent = new Intent(Main2Activity.this, NSFWSpaceInvadersActivity.class);
                 startActivity(intent);
             }
         });

@@ -58,8 +58,8 @@ public class NSFWInvader {
         y = row * (length + padding/4);
 
         // Initialize the bitmap
-        bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader1);
-        bitmap2 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader2);
+        bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.boobs1);
+        bitmap2 = BitmapFactory.decodeResource(context.getResources(), R.drawable.boobs2);
 
         // stretch the first bitmap to a size appropriate for the screen resolution
         bitmap1 = Bitmap.createScaledBitmap(bitmap1,

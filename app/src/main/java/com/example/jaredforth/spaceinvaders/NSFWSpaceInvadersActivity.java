@@ -10,7 +10,7 @@ public class NSFWSpaceInvadersActivity extends Activity {
     // spaceInvadersView will be the view of the game
     // It will also hold the logic of the game
     // and respond to screen touches as well
-    SpaceInvadersView spaceInvadersView;
+    NSFWSpaceInvadersView spaceInvadersView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class NSFWSpaceInvadersActivity extends Activity {
         display.getSize(size);
 
         // Initialize gameView and set it as the view
-        spaceInvadersView = new SpaceInvadersView(this, size.x, size.y);
+        spaceInvadersView = new NSFWSpaceInvadersView(this, size.x, size.y);
         setContentView(spaceInvadersView);
 
     }

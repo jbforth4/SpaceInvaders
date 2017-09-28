@@ -51,7 +51,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
     private int screenY;
 
     // The players ship
-    private PlayerShip playerShip;
+    private NSFWPlayerShip playerShip;
 
     // The player's bullet
     private NSFWBullet bullet;
@@ -153,7 +153,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
         // Here we will initialize all the game objects
 
         // Make a new player space ship
-        playerShip = new PlayerShip(context, screenX, screenY);
+        playerShip = new NSFWPlayerShip(context, screenX, screenY);
 
         // Prepare the players bullet
         bullet = new NSFWBullet(context, screenX, screenY);
