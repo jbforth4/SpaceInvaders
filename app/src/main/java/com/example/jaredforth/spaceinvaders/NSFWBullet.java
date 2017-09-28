@@ -1,9 +1,11 @@
 package com.example.jaredforth.spaceinvaders;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.RectF;
+import android.view.animation.LinearInterpolator;
 
 /**
  * Created by jaredforth on 9/27/17.
@@ -60,6 +62,10 @@ public class NSFWBullet {
         return rect;
     }
 
+    public float getX(){
+        return x;
+    }
+
     public Bitmap getBitmap(){
         return bitmap1;
     }
@@ -108,6 +114,7 @@ public class NSFWBullet {
         rect.right = x + width;
         rect.top = y;
         rect.bottom = y + height;
+
 
     }
 }

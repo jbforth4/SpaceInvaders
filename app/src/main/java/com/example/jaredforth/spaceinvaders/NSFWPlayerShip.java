@@ -44,10 +44,10 @@ public class NSFWPlayerShip {
         // Initialize a blank RectF
         rect = new RectF();
 
-        length = screenX/2;
-        height = screenY/2;
+        length = screenX / 10;
+        height = screenY / 10;
 
-        // Start ship in roughly the screen centre
+        // Start ship in roughly the screen center
         x = screenX / 2;
         y = screenY - 20;
 

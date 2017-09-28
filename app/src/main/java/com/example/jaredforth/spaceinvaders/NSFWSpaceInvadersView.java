@@ -413,7 +413,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
             paint.setColor(Color.argb(255,  255, 255, 255));
 
             // Draw the player spaceship
-            canvas.drawBitmap(playerShip.getBitmap(), playerShip.getX(), screenY - 50, paint);
+            canvas.drawBitmap(playerShip.getBitmap(), playerShip.getX(), screenY - 110, paint);
 
             // Draw the invaders
             for(int i = 0; i < numInvaders; i++){
@@ -434,7 +434,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
             }
             // Draw the players bullet if active
             if(bullet.getStatus()){
-                canvas.drawRect(bullet.getRect(), paint);
+                canvas.drawBitmap(bullet.getBitmap(), bullet.getX(), screenY - 180, paint);
             }
 
             // Draw the invaders bullets
