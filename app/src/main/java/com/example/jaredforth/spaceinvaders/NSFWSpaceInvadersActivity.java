@@ -5,15 +5,12 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Display;
 
-// SpaceInvadersActivity is the entry point to the game.
-// It will handle the lifecycle of the game by calling
-// methods of spaceInvadersView when prompted to so by the OS.
-public class SpaceInvadersActivity extends Activity {
+public class NSFWSpaceInvadersActivity extends Activity {
 
     // spaceInvadersView will be the view of the game
     // It will also hold the logic of the game
     // and respond to screen touches as well
-    NSFWSpaceInvadersView spaceInvadersView;
+    SpaceInvadersView spaceInvadersView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +23,7 @@ public class SpaceInvadersActivity extends Activity {
         display.getSize(size);
 
         // Initialize gameView and set it as the view
-        spaceInvadersView = new NSFWSpaceInvadersView(this, size.x, size.y);
+        spaceInvadersView = new SpaceInvadersView(this, size.x, size.y);
         setContentView(spaceInvadersView);
 
     }
@@ -49,4 +46,3 @@ public class SpaceInvadersActivity extends Activity {
         spaceInvadersView.pause();
     }
 }
-
