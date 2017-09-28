@@ -119,7 +119,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
             AssetFileDescriptor descriptor;
 
             // Load our fx in memory ready for use
-            descriptor = assetManager.openFd("shoot.ogg");
+            descriptor = assetManager.openFd("maleOrgasm.ogg");
             shootID = soundPool.load(descriptor, 0);
 
             descriptor = assetManager.openFd("invaderexplode.ogg");
@@ -128,7 +128,7 @@ public class NSFWSpaceInvadersView extends SurfaceView implements Runnable {
             descriptor = assetManager.openFd("damageshelter.ogg");
             damageShelterID = soundPool.load(descriptor, 0);
 
-            descriptor = assetManager.openFd("playerexplode.ogg");
+            descriptor = assetManager.openFd("womanOrgasm.ogg");
             playerExplodeID = soundPool.load(descriptor, 0);
 
             descriptor = assetManager.openFd("damageshelter.ogg");

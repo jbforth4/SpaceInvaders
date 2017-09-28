@@ -30,12 +30,14 @@ public class NSFWBullet {
     private int length;
 
     private boolean isActive;
+    boolean isVisible;
 
     public NSFWBullet(Context context, int screenY, int screenX) {
 
         length = screenX / 20;
         height = screenY / 20;
         isActive = false;
+        isVisible = true;
 
         rect = new RectF();
         bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.cum);
@@ -46,8 +48,20 @@ public class NSFWBullet {
                 false);
     }
 
+    public void setInvisible(){
+        isVisible = false;
+    }
+
+    public boolean getVisibility(){
+        return isVisible;
+    }
+
     public RectF getRect(){
-        return  rect;
+        return rect;
+    }
+
+    public Bitmap getBitmap(){
+        return bitmap1;
     }
 
     public boolean getStatus(){
